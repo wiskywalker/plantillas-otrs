@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<otrs_stats>
+<Cache>0</Cache>
+<Description>En este informe se muestran todos los tickets de UFGnet por técnico</Description>
+<Format>CSV</Format>
+<Format>Excel</Format>
+<Format>D3::BarChart</Format>
+<Format>D3::LineChart</Format>
+<Format>D3::StackedAreaChart</Format>
+<Format>Print</Format>
+<Object>Ticket</Object>
+<ObjectModule>Kernel::System::Stats::Dynamic::Ticket</ObjectModule>
+<ObjectName>TicketAccumulation</ObjectName>
+<Permission>stats</Permission>
+<ShowAsDashboardWidget>1</ShowAsDashboardWidget>
+<StatType>dynamic</StatType>
+<SumCol>1</SumCol>
+<SumRow>1</SumRow>
+<TimeZone>America/El_Salvador</TimeZone>
+<Title>UFGnet Cantidad de ticket por técnico y por estado de UFGnet (Por día, es posible aplicar otros filtros)</Title>
+<UseAsRestriction Element="CreateTime" Fixed="1" TimeRelativeCount="1" TimeRelativeUnit="Day" TimeRelativeUpcomingCount="1">
+</UseAsRestriction>
+<UseAsValueSeries Element="OwnerIDs" Fixed="1">
+<SelectedValues>root@localhost</SelectedValues>
+<SelectedValues>aestrada</SelectedValues>
+<SelectedValues>dortiz</SelectedValues>
+<SelectedValues>gegarcia</SelectedValues>
+<SelectedValues>hchilin</SelectedValues>
+<SelectedValues>jaflores</SelectedValues>
+<SelectedValues>jmlazo</SelectedValues>
+<SelectedValues>jhgarcia</SelectedValues>
+<SelectedValues>jponce</SelectedValues>
+<SelectedValues>jmiranda</SelectedValues>
+<SelectedValues>mvalencia</SelectedValues>
+<SelectedValues>mlportillo</SelectedValues>
+<SelectedValues>omartinez</SelectedValues>
+<SelectedValues>rocruz</SelectedValues>
+<SelectedValues>srivera</SelectedValues>
+<SelectedValues>vbolanos</SelectedValues>
+<SelectedValues>wdiaz</SelectedValues>
+</UseAsValueSeries>
+<UseAsXvalue Element="StateIDs" Fixed="1">
+<SelectedValues>Abierto</SelectedValues>
+<SelectedValues>closed successful</SelectedValues>
+<SelectedValues>closed unsuccessful</SelectedValues>
+<SelectedValues>removed</SelectedValues>
+<SelectedValues>new</SelectedValues>
+</UseAsXvalue>
+<Valid>1</Valid>
+</otrs_stats>

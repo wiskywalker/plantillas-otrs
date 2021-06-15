@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<otrs_stats>
+<Cache>0</Cache>
+<Description>Lista de tickets abiertos, ordenados por tiempo restante hasta que expire el plazo de escalada.
+
+NOTA: Verifique cuidadosamente la salida y la configuración de las estadísticas para asegurarse de que produzcan los resultados esperados. Si es necesario, cambie la configuración antes de utilizar las estadísticas en un entorno de producción.</Description>
+<File></File>
+<Format>CSV</Format>
+<Format>Print</Format>
+<GraphSize></GraphSize>
+<Object>TicketList</Object>
+<ObjectModule>Kernel::System::Stats::Dynamic::TicketList</ObjectModule>
+<ObjectName>Ticketlist</ObjectName>
+<Permission>stats</Permission>
+<StatType>dynamic</StatType>
+<SumCol>0</SumCol>
+<SumRow>0</SumRow>
+<Title>017-Lista de tickets abiertos, ordenados por tiempo restante hasta que expire el plazo de escalada.</Title>
+<UseAsRestriction Element="StateIDs" Fixed="1">
+<SelectedValues>new</SelectedValues>
+<SelectedValues>open</SelectedValues>
+<SelectedValues>pending auto close-</SelectedValues>
+<SelectedValues>pending auto close+</SelectedValues>
+<SelectedValues>pending reminder</SelectedValues>
+</UseAsRestriction>
+<UseAsValueSeries Element="OrderBy" Fixed="1">
+<SelectedValues>EscalationTimeWorkingTime</SelectedValues>
+</UseAsValueSeries>
+<UseAsValueSeries Element="SortSequence" Fixed="1">
+<SelectedValues>Up</SelectedValues>
+</UseAsValueSeries>
+<UseAsXvalue Element="TicketAttributes" Fixed="1">
+</UseAsXvalue>
+<Valid>1</Valid>
+</otrs_stats>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<otrs_stats>
+<Cache>0</Cache>
+<Description>En este informe se muestran todos los tickets de Redes y Telefonía</Description>
+<Format>CSV</Format>
+<Format>Excel</Format>
+<Format>D3::BarChart</Format>
+<Format>D3::LineChart</Format>
+<Format>D3::StackedAreaChart</Format>
+<Format>Print</Format>
+<Object>Ticket</Object>
+<ObjectModule>Kernel::System::Stats::Dynamic::Ticket</ObjectModule>
+<ObjectName>TicketAccumulation</ObjectName>
+<Permission>stats</Permission>
+<ShowAsDashboardWidget>0</ShowAsDashboardWidget>
+<StatType>dynamic</StatType>
+<SumCol>0</SumCol>
+<SumRow>1</SumRow>
+<TimeZone>America/El_Salvador</TimeZone>
+<Title>SV Cantidad de ticket por técnico y por estado de Redes y Telefonía</Title>
+<UseAsValueSeries Element="OwnerIDs" Fixed="1">
+<SelectedValues>jaramirez</SelectedValues>
+<SelectedValues>jminero</SelectedValues>
+<SelectedValues>jcalles</SelectedValues>
+<SelectedValues>regonzalez</SelectedValues>
+</UseAsValueSeries>
+<UseAsXvalue Element="StateIDs" Fixed="1">
+<SelectedValues>Abierto</SelectedValues>
+<SelectedValues>closed successful</SelectedValues>
+<SelectedValues>closed unsuccessful</SelectedValues>
+<SelectedValues>removed</SelectedValues>
+</UseAsXvalue>
+<Valid>1</Valid>
+</otrs_stats>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<otrs_stats>
+<Cache>0</Cache>
+<Description>Resumen mensual de todos los tickets creados en el último mes por estado.
+
+Eje X: días del mes
+Eje Y: Estado
+
+Restricciones:
+     -creado en el último mes </Description>
+<File></File>
+<Format>CSV</Format>
+<Format>Excel</Format>
+<Format>Print</Format>
+<Format>D3::BarChart</Format>
+<Format>D3::LineChart</Format>
+<Format>D3::StackedAreaChart</Format>
+<Object>Ticket</Object>
+<ObjectModule>Kernel::System::Stats::Dynamic::Ticket</ObjectModule>
+<Permission>stats</Permission>
+<StatType>dynamic</StatType>
+<SumCol>1</SumCol>
+<SumRow>1</SumRow>
+<Title>007-Resumen mensual de todos los tickets creados en el último mes por estado</Title>
+<UseAsValueSeries Element="StateIDs" Fixed="1">
+</UseAsValueSeries>
+<UseAsXvalue Element="CreateTime" TimeRelativeCount="1" TimeRelativeUnit="Month" TimeScaleCount="1">
+<SelectedValues>Day</SelectedValues>
+</UseAsXvalue>
+<Valid>1</Valid>
+</otrs_stats>
